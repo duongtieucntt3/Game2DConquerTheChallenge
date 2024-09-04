@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|d:\\gameconquerthechallenge\\conquerthechallenge\\assets\\_scripts\\collectingcoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\collectingcoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|D:\\GameConquerTheChallenge\\ConquerTheChallenge\\assets\\_scripts\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|D:\\GameConquerTheChallenge\\ConquerTheChallenge\\assets\\_scripts\\swipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\swipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|D:\\GameConquerTheChallenge\\ConquerTheChallenge\\assets\\_scripts\\buttonanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\buttonanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|D:\\GameConquerTheChallenge\\ConquerTheChallenge\\assets\\_scripts\\addressablesamplearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECCABB0-D32C-DE2F-70E1-A68435028C46}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\addressablesamplearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CollectingCoin.cs",
+              "DocumentMoniker": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\CollectingCoin.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\CollectingCoin.cs",
+              "ToolTip": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\CollectingCoin.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\CollectingCoin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:45:01.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ButtonAnimation.cs",
+              "DocumentMoniker": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\ButtonAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ButtonAnimation.cs",
+              "ToolTip": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\ButtonAnimation.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ButtonAnimation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:14:57.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SwipeController.cs",
+              "DocumentMoniker": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\SwipeController.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\SwipeController.cs",
+              "ToolTip": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\SwipeController.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\SwipeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:10:55.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Loading.cs",
+              "DocumentMoniker": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\Loading.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Loading.cs",
+              "ToolTip": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\Loading.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Loading.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:52:56.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddressableSampleArray.cs",
+              "DocumentMoniker": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\AddressableSampleArray.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\AddressableSampleArray.cs",
+              "ToolTip": "D:\\GameConquerTheChallenge\\ConquerTheChallenge\\Assets\\_Scripts\\AddressableSampleArray.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\AddressableSampleArray.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:27:02.784Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
