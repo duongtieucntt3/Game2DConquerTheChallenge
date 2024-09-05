@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9F4B3647-2ED6-430F-A1EC-6F3770C0BC57}</ProjectGuid>
+    <ProjectGuid>{42B55896-8258-C9CA-EA7A-D0902BE8DA9B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -1144,15 +1144,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeanTouch.csproj">
-      <Project>{DBC48BA4-F1A7-5466-3CCB-8716A54E70A2}</Project>
+      <Project>{D32476E1-2CBD-37C6-9A70-D86954761E0E}</Project>
       <Name>LeanTouch</Name>
     </ProjectReference>
     <ProjectReference Include="LeanCommon.csproj">
-      <Project>{71C83A82-16EE-CDC0-D727-38B7B77863F5}</Project>
+      <Project>{F7AC2007-22DE-DD24-D82E-8E189F7D817E}</Project>
       <Name>LeanCommon</Name>
     </ProjectReference>
     <ProjectReference Include="CW.Common.csproj">
-      <Project>{CBA04AE9-54B7-BB7C-01B7-F5652AC21F89}</Project>
+      <Project>{65F64D1A-3C77-809B-C520-17E4E0DFCBCF}</Project>
       <Name>CW.Common</Name>
     </ProjectReference>
   </ItemGroup>
