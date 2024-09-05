@@ -1131,6 +1131,10 @@
       <HintPath>Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="spine-csharp">
+      <HintPath>Library\ScriptAssemblies\spine-csharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="NaughtyAttributes.Core">
       <HintPath>Library\ScriptAssemblies\NaughtyAttributes.Core.dll</HintPath>
       <Private>False</Private>

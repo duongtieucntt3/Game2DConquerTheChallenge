@@ -8,22 +8,21 @@ public class AddressableSampleArray : MonoBehaviour
     public int currentLevel = 1;
     private GameObject _currentLevelInstance;
 
-    async void Start()
+    private async void Start()
     {
-        await LoadLevelPrefab(currentLevel);
+       // await LoadLevelPrefab(currentLevel);
     }
 
     public async void OnNextLevelButtonClicked()
     {
         currentLevel++;
-
-
         UnloadCurrentLevel();
-
-
         await LoadLevelPrefab(currentLevel);
     }
-
+    public async void LoadLevel(int level)
+    {
+        await LoadLevelPrefab(level);
+    }
     private async UniTask LoadLevelPrefab(int level)
     {
         if (level <= 0 || level > _levelPrefabs.Length)
@@ -31,7 +30,6 @@ public class AddressableSampleArray : MonoBehaviour
             Debug.LogError("Invalid level index.");
             return;
         }
-
         AssetReference assetReference = _levelPrefabs[level - 1];
         GameObject result = await assetReference.GetGameObject2();
         _currentLevelInstance = Instantiate(result);
