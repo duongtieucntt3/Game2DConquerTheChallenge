@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 500, y: 50}
   m_MaxSize: {x: 40480, y: 8096}
   vertical: 0
-  controlID: 68
+  controlID: 112
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 16
+  controlID: 26
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -272,14 +272,14 @@ MonoBehaviour:
     y: 0
     width: 470.40002
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0.3631257, y: -0.37614444, z: -0.030955538}
     speed: 2
-    m_Value: {x: 0.34828475, y: -0.39840588, z: -0.03257568}
+    m_Value: {x: 0.3631257, y: -0.37614444, z: -0.030955538}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 3.4382925
     speed: 2
-    m_Value: 3.6003063
+    m_Value: 3.4382925
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -867,7 +867,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ac5bffff4a64ffffa274ffff6c78ffff9484fffff692ffffc693ffffeaacffff3aadffffa0b2ffff14bcffff8abdffff228d00007a8d0000848d0000b28d0000e08d0000
+      m_ExpandedIDs: 5cbbffffd4bcffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -936,7 +936,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_TaiNguyen
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -944,16 +944,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 32
   m_LastFolders:
-  - Assets/_TaiNguyen
+  - Assets/Scenes
   m_LastFoldersGridSize: 32
   m_LastProjectPath: E:\Game2DConquerTheChallenge
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 90840000
-    m_LastClickedID: 33936
-    m_ExpandedIDs: 000000007684000000ca9a3b
+    m_SelectedIDs: 02850000
+    m_LastClickedID: 34050
+    m_ExpandedIDs: 00000000de84000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -981,7 +981,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5a710000
     m_LastClickedID: 29018
-    m_ExpandedIDs: 0000000076840000
+    m_ExpandedIDs: 00000000de840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 587000002070000030e2000000000000e6e1000026e20000dc800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1104,9 +1104,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1160.8
+    x: 1065.6
     y: 73.6
-    width: 374.19995
+    width: 469.40002
     height: 701.8
   m_SerializedDataModeController:
     m_DataMode: 0
