@@ -5,7 +5,7 @@ using UnityEngine.AddressableAssets;
 public class AddressableSampleArray : MonoBehaviour
 {
     [SerializeField] private AssetReference[] _levelPrefabs;
-    public int currentLevel = 1;
+    public int currentLevel = 0;
     private GameObject _currentLevelInstance;
 
     private async void Start()

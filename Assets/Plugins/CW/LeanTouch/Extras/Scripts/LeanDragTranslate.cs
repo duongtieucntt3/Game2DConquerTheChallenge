@@ -8,8 +8,9 @@ namespace Lean.Touch
 	[AddComponentMenu(LeanTouch.ComponentPathPrefix + "Drag Translate")]
 	public class LeanDragTranslate : MonoBehaviour
 	{
-		/// <summary>The method used to find fingers to use with this component. See LeanFingerFilter documentation for more information.</summary>
-		public LeanFingerFilter Use = new LeanFingerFilter(true);
+        protected Transform trans;
+        /// <summary>The method used to find fingers to use with this component. See LeanFingerFilter documentation for more information.</summary>
+        public LeanFingerFilter Use = new LeanFingerFilter(true);
 
 		/// <summary>The camera the translation will be calculated using.
 		/// None/null = MainCamera.</summary>
@@ -59,7 +60,8 @@ namespace Lean.Touch
 
 		protected virtual void Awake()
 		{
-			Use.UpdateRequiredSelectable(gameObject);
+            this.trans = transform;
+            Use.UpdateRequiredSelectable(gameObject);
 		}
 
 		protected virtual void Update()
