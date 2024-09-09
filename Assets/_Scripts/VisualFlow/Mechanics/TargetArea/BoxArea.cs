@@ -1,4 +1,5 @@
 using System.Reflection;
+using NaughtyAttributes;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -63,7 +64,9 @@ namespace VisualFlow
         {
             this.debugBounds.center = transform.position;
             this.debugBounds.size = this.size;
-           // DebugExtension.DrawBounds(this.debugBounds, Color.red);
+            //DebugExtension.DrawBounds(this.debugBounds, Color.red);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(debugBounds.center, debugBounds.size);
         }
 
         [MenuItem("GameObject/Visual Flow/Areas/Box", false, -10000)]

@@ -1,4 +1,7 @@
 using Cysharp.Threading.Tasks;
+using Lean.Touch;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -6,18 +9,32 @@ public class AddressableSampleArray : MonoBehaviour
 {
     [SerializeField] private AssetReference[] _levelPrefabs;
     public int currentLevel = 0;
-    private GameObject _currentLevelInstance;
+    public GameObject _currentLevelInstance;
 
-    private async void Start()
+    private async void OnPlayerLose()
     {
-       // await LoadLevelPrefab(currentLevel);
+
+        if (_currentLevelInstance != null)
+        {
+            UnloadCurrentLevel();
+        }
+        await LoadLevelPrefab(currentLevel);
     }
 
     public async void OnNextLevelButtonClicked()
     {
-        currentLevel++;
-        UnloadCurrentLevel();
-        await LoadLevelPrefab(currentLevel);
+        if(currentLevel < _levelPrefabs.Length)
+        {
+            currentLevel++;
+            UnloadCurrentLevel();
+            UnLockNewLevel();
+            await LoadLevelPrefab(currentLevel);
+        }
+        else
+        {
+            Debug.LogError("No more levels to load.");
+        }
+
     }
     public async void LoadLevel(int level)
     {
@@ -31,8 +48,27 @@ public class AddressableSampleArray : MonoBehaviour
             return;
         }
         AssetReference assetReference = _levelPrefabs[level - 1];
-        GameObject result = await assetReference.GetGameObject2();
-        _currentLevelInstance = Instantiate(result);
+        if (!assetReference.RuntimeKeyIsValid())
+        {
+            Debug.LogError("Invalid asset reference.");
+            return;
+        }
+        try
+        {
+            GameObject result = await assetReference.GetGameObject();
+            if (result != null)
+            {
+                _currentLevelInstance = Instantiate(result);
+            }
+            else
+            {
+                Debug.LogError("Failed to load level prefab.");
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"Error loading level prefab: {ex.Message}");
+        }
     }
 
     private void UnloadCurrentLevel()
@@ -40,13 +76,29 @@ public class AddressableSampleArray : MonoBehaviour
         if (_currentLevelInstance != null)
         {
             Destroy(_currentLevelInstance);
+            // Gi?i phóng tài nguyên c?a ??i t??ng ?ã b? h?y
+            Addressables.ReleaseInstance(_currentLevelInstance);
+            _currentLevelInstance = null;
+        }
+    }
+    private void UnLockNewLevel()
+    {
+        int reachedIndex = PlayerPrefs.GetInt("ReachedIndex", 0);
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        if (currentLevel >= reachedIndex)
+        {
+            PlayerPrefs.SetInt("ReachedIndex", currentLevel + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", unlockedLevel + 1);
+            PlayerPrefs.Save();
         }
     }
 }
 
+
 public static class AddressableUniTaskExtensions
 {
-    public static async UniTask<GameObject> GetGameObject2(this AssetReference assetReference)
+    public static async UniTask<GameObject> GetGameObject(this AssetReference assetReference)
     {
         var asyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(assetReference);
         GameObject result = await asyncOperationHandle.Task.AsUniTask();

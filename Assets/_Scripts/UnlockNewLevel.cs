@@ -6,7 +6,7 @@ public class UnlockNewLevel : MonoBehaviour
 {
     [SerializeField] private AddressableSampleArray addressableSampleArray;
 
-    private void UnLock()
+    public void UnLock()
     {
         if (addressableSampleArray.currentLevel >= PlayerPrefs.GetInt("ReachedIndex"))
         {
