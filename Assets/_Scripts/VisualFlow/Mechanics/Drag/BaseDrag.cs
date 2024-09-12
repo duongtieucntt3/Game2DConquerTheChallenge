@@ -72,10 +72,10 @@ namespace VisualFlow
             {
                 await UniTask.WaitUntil(() => this.complete, PlayerLoopTiming.Update, cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException)
             {
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 LeanTouch.OnFingerUp -= FingerUpHandler;
             }
@@ -106,7 +106,7 @@ namespace VisualFlow
             LeanTouch.OnFingerUp -= FingerUpHandler;
         }
 
-        private void SelectHandler(LeanSelect select)
+        private async void SelectHandler(LeanSelect select)
         {
             //ServiceLocator.GetService<IVibrationService>().PlayLoopDefault();
             this.leanDragTranslate.enabled = true;
@@ -151,7 +151,7 @@ namespace VisualFlow
             }
         }
 
-        private void FingerUpHandler(LeanFinger finger)
+        private async void FingerUpHandler(LeanFinger finger)
         {
             if (!this.selectable.IsSelected) return;
             this.selectable.Deselect();
@@ -173,7 +173,7 @@ namespace VisualFlow
         {
             this.complete = true;
         }
-        protected void InvokeDragFailed()
+        protected async void InvokeDragFailed()
         {
             this.complete = false;
             if (this.dragFailed != null && !this.dragFailed.IsExecuting)

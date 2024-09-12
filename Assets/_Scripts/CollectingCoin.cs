@@ -57,6 +57,11 @@ public class CollectingCoin : MonoBehaviour
         coin = value;
         _coinText.text = coin.ToString();
     }
+    public void DeductCoins(int value)
+    {
+        if (coin < value) return;
+        SetCoin(coin - value);
+    }
     private async UniTask MoveCoinsTask()
     {
         List<UniTask> moveCoinTask = new List<UniTask>();

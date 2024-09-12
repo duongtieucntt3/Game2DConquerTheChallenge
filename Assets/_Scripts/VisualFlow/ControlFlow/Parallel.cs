@@ -31,7 +31,7 @@ namespace VisualFlow
             {
                 await UniTask.WhenAll(tasks).AttachExternalCancellation(cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException)
             {
             }
         }

@@ -1,58 +1,68 @@
 using Cysharp.Threading.Tasks;
 using Lean.Touch;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 public class AddressableSampleArray : MonoBehaviour
 {
+    //public delegate void ClickAction();
+    //public static event ClickAction OnClicked;
     [SerializeField] private AssetReference[] _levelPrefabs;
     public int currentLevel = 0;
-    public GameObject _currentLevelInstance;
+    private GameObject _currentLevelInstance;
+    [SerializeField] private TextMeshProUGUI textLevel;
 
-    private async void OnPlayerLose()
+    public async void OnPlayerLose()
     {
+        UnLevels();
+        await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
+        LoadLevel(currentLevel);
 
-        if (_currentLevelInstance != null)
-        {
-            UnloadCurrentLevel();
-        }
-        await LoadLevelPrefab(currentLevel);
     }
+    public async void UnLevels()
+    {
+        await UniTask.Delay(TimeSpan.FromSeconds(0.07f));
+        await UnloadCurrentLevel();
 
+    }
     public async void OnNextLevelButtonClicked()
     {
-        if(currentLevel < _levelPrefabs.Length)
+        if (currentLevel < _levelPrefabs.Length)
         {
             currentLevel++;
-            UnloadCurrentLevel();
+            UnLevels();
+            await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
             UnLockNewLevel();
-            await LoadLevelPrefab(currentLevel);
+            LoadLevel(currentLevel);
+        }
+    }
+    public void RewindLevel()
+    {
+        if (currentLevel > 5)
+        {
+            this.LoadLevel(currentLevel - 4);
         }
         else
         {
-            Debug.LogError("No more levels to load.");
+            this.LoadLevel(1);
         }
 
     }
     public async void LoadLevel(int level)
     {
         await LoadLevelPrefab(level);
+        currentLevel = level;
+        textLevel.text = currentLevel.ToString();
     }
     private async UniTask LoadLevelPrefab(int level)
     {
-        if (level <= 0 || level > _levelPrefabs.Length)
-        {
-            Debug.LogError("Invalid level index.");
-            return;
-        }
+        if (level <= 0 || level > _levelPrefabs.Length) return;
         AssetReference assetReference = _levelPrefabs[level - 1];
-        if (!assetReference.RuntimeKeyIsValid())
-        {
-            Debug.LogError("Invalid asset reference.");
-            return;
-        }
+        if (!assetReference.RuntimeKeyIsValid()) return;
         try
         {
             GameObject result = await assetReference.GetGameObject();
@@ -60,10 +70,7 @@ public class AddressableSampleArray : MonoBehaviour
             {
                 _currentLevelInstance = Instantiate(result);
             }
-            else
-            {
-                Debug.LogError("Failed to load level prefab.");
-            }
+
         }
         catch (System.Exception ex)
         {
@@ -71,15 +78,14 @@ public class AddressableSampleArray : MonoBehaviour
         }
     }
 
-    private void UnloadCurrentLevel()
+    public async UniTask UnloadCurrentLevel()
     {
-        if (_currentLevelInstance != null)
-        {
-            Destroy(_currentLevelInstance);
-            // Gi?i phóng tài nguyên c?a ??i t??ng ?ã b? h?y
-            Addressables.ReleaseInstance(_currentLevelInstance);
-            _currentLevelInstance = null;
-        }
+        if (_currentLevelInstance == null) return;
+        Destroy(_currentLevelInstance);
+        Addressables.ReleaseInstance(_currentLevelInstance);
+        await UniTask.CompletedTask;
+
+
     }
     private void UnLockNewLevel()
     {
@@ -94,7 +100,6 @@ public class AddressableSampleArray : MonoBehaviour
         }
     }
 }
-
 
 public static class AddressableUniTaskExtensions
 {

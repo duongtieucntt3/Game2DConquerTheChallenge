@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
-{
+{   
     public static int health = 5;
     public Image[] hearts;
     public Sprite fullHeart;
@@ -24,6 +24,10 @@ public class HealthManager : MonoBehaviour
         {
             hearts[i].sprite = fullHeart;
         }
+    }
+    public void SetHealth(int count)
+    {
+        health = count;
     }
 
 }

@@ -26,7 +26,7 @@ namespace VisualFlow
             for (int i = 0; i < this.actions.Count; i++)
             {
                 if (this.waitAction.Equals(this.actions[i])) continue;
-                this.actions[i].Execute(this.cancellationTokenSource.Token);
+                await this.actions[i].Execute(this.cancellationTokenSource.Token);
             }
 
             try

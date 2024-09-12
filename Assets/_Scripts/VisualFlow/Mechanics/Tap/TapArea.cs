@@ -36,7 +36,7 @@ namespace VisualFlow
                 LeanTouch.OnFingerTap += FingerTapHandler;
                 await UniTask.WaitUntil(() => this.complete, PlayerLoopTiming.Update, cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException)
             {
             }
             finally
@@ -62,7 +62,10 @@ namespace VisualFlow
                 }
             }
         }
-
+        private void OnDisable()
+        {
+            LeanTouch.OnFingerTap -= FingerTapHandler;
+        }
         private void ProcessTap(LeanFinger finger)
         {
             var isFingerTapInsideArea = this.target.ContainsScreenPosition(finger.ScreenPosition, Camera.main);

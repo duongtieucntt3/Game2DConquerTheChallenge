@@ -59,7 +59,7 @@ namespace VisualFlow
             this.startingPos = this.trans.position;
             this.startingScale = this.targetTransform.transform.localScale;
             this.targetTransform.transform.localScale = Vector3.zero;
-            this.targetTransform.transform.DOScale(Vector3.one, 0.4f).SetEase(Ease.OutBack);
+            await this.targetTransform.transform.DOScale(Vector3.one, 0.4f).SetEase(Ease.OutBack);
         }
 
         protected override async UniTask OnExecuting(CancellationToken cancellationToken)
@@ -74,7 +74,7 @@ namespace VisualFlow
             {
                 await UniTask.WaitUntil(() => complete, PlayerLoopTiming.Update, cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException)
             {
             }
             finally
@@ -91,7 +91,7 @@ namespace VisualFlow
             complete = isCompleted;
         }
 
-        private void SelectHandler(LeanSelect select)
+        private async void SelectHandler(LeanSelect select)
         {
             this.targetTransform.gameObject.SetActive(false);
             this.headerGraphic.SetActive(true);
@@ -99,13 +99,13 @@ namespace VisualFlow
 
             if (this.startDragAction != null)
             {
-                this.startDragAction.Execute(this.cancellationToken);
+                await this.startDragAction.Execute(this.cancellationToken);
             }
 
             this.startDrag?.Invoke();
         }
 
-        private void DeselectHandler(LeanSelect select)
+        private async void DeselectHandler(LeanSelect select)
         {
             this.leanDragTranslate.enabled = false;
             this.headerGraphic.SetActive(false);
@@ -115,7 +115,7 @@ namespace VisualFlow
                 complete = true;
                 if (this.completeDrag != null)
                 {
-                    this.completeDrag.Execute(this.cancellationToken);
+                    await this.completeDrag.Execute(this.cancellationToken);
                 }
 
                 this.completedEvent?.Invoke();
@@ -127,10 +127,10 @@ namespace VisualFlow
                 this.targetTransform.gameObject.SetActive(true);
                 this.trans.position = this.startingPos;
                 this.targetTransform.transform.localScale = Vector3.zero;
-                this.targetTransform.transform.DOScale(this.startingScale, 0.4f).SetEase(Ease.OutBack);
+                await this.targetTransform.transform.DOScale(this.startingScale, 0.4f).SetEase(Ease.OutBack);
                 if (this.endDragAction != null)
                 {
-                    this.endDragAction.Execute(this.cancellationToken);
+                    await this.endDragAction.Execute(this.cancellationToken);
                 }
 
                 this.endDrag?.Invoke();

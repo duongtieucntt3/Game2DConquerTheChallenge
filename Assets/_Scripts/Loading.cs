@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class Loading : MonoBehaviour
 {
-    [SerializeField] Slider _slider;
-    [SerializeField] TMP_Text loadingPercent;
-    [SerializeField] Transform go;
+    [SerializeField]private Slider _slider;
+    [SerializeField]private TMP_Text loadingPercent;
+    [SerializeField] private GameObject[] active;
     private int percent;
 
     private void Start()
@@ -37,9 +37,13 @@ public class Loading : MonoBehaviour
 
     private void LoadMenu()
     {
-        if (go != null)
+        foreach (GameObject go in active) 
         {
-            go.gameObject.SetActive(true);
+            if (go != null)
+            {
+                go.gameObject.SetActive(true);
+            }
         }
+ 
     }
 }

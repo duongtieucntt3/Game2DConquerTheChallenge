@@ -27,7 +27,10 @@ namespace VisualFlow
         {
             await OnInitializing();
         }
-
+        private void OnDisable()
+        {
+            Dispose();
+        }
         private void OnDestroy()
         {
             Dispose();
@@ -53,7 +56,7 @@ namespace VisualFlow
                 await OnExit(cancellationToken);
                 //await OnReset(cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException )
             {
             }
             catch (Exception e)

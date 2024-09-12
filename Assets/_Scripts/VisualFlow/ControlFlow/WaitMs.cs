@@ -19,7 +19,7 @@ namespace VisualFlow
             {
                 await UniTask.Delay(this.ms, false, PlayerLoopTiming.Update, cancellationToken);
             }
-            catch (OperationCanceledException e)
+            catch (OperationCanceledException)
             {
             }
         }
