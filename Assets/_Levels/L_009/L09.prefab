@@ -376,7 +376,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0063738823, y: 1.1699669}
+  m_Offset: {x: 0.0063738823, y: 1.2909043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -387,7 +387,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7322936, y: 0.63973486}
+  m_Size: {x: 2.7322936, y: 0.88160884}
   m_EdgeRadius: 0
 --- !u!50 &2170752053388903311
 Rigidbody2D:
@@ -768,9 +768,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0104596615}
+  m_Offset: {x: 0, y: -0.5441398}
   serializedVersion: 2
-  m_Radius: 0.47523546
+  m_Radius: 0.39120504
 --- !u!1 &3428049762736413425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,9 +1048,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.010459602}
+  m_Offset: {x: 0, y: -0.5945579}
   serializedVersion: 2
-  m_Radius: 0.4660986
+  m_Radius: 0.41568038
 --- !u!1 &4406563707762178586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,9 +1324,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.19149196, y: -0.41217065}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.55654275
 --- !u!1 &5523457061139938433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,9 +1444,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.010459632}
+  m_Offset: {x: 0, y: -0.6205128}
   serializedVersion: 2
-  m_Radius: 0.4765583
+  m_Radius: 0.36418015
 --- !u!1 &5654254578072386957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,9 +2131,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.005229816}
+  m_Offset: {x: 0, y: -0.5997877}
   serializedVersion: 2
-  m_Radius: 0.50270736
+  m_Radius: 0.36825904
 --- !u!1 &7250033883205958554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,9 +2442,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.6060398}
   serializedVersion: 2
-  m_Radius: 0.49747753
+  m_Radius: 0.37305886
 --- !u!1 &7815276665401808573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,7 +2460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8059401347162376638
 Transform:
   m_ObjectHideFlags: 0

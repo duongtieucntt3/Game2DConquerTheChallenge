@@ -71,7 +71,7 @@ public class CheckCollisionOnDragNew : MonoBehaviour
     }
     protected virtual void HandleGoalCollision(Collider2D other)
     {
-        audioManager.PlaySFX(audioManager.Eat);
+        audioManager.PlaySFX(audioManager.eat);
         Destroy(other.gameObject);// Object Pooling 
         this.UpdateNumberObject(other);
         this.CheckNumber();

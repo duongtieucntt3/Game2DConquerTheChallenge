@@ -13,7 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip death;
     public AudioClip win;
     public AudioClip coin;
-    public AudioClip Eat;
+    public AudioClip eat;
+    public AudioClip button;
 
     private void Start()
     {
