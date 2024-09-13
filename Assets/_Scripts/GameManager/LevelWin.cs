@@ -6,14 +6,17 @@ using VisualFlow;
 public class LevelWin : VisualAction
 {
     private AddressableSampleArray addressableSample;
+    private AudioManager audioManager;
     protected override async UniTask OnExecuting(CancellationToken cancellationToken)
     {
+        audioManager.PlaySFX(audioManager.win);
         GameManager.Instance.SetGameWin();
         addressableSample.UnLevels();
         await UniTask.CompletedTask;
     }
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         LoadAddressableSampleArray();
     }
 

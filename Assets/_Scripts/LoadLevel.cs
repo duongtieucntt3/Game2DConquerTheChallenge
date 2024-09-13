@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LoadLevel : MonoBehaviour
 {
-    public Button[] buttons;
+    [SerializeField] private Button[] buttons;
     private void Awake()
     {
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);

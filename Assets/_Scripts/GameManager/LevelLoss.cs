@@ -6,15 +6,20 @@ using VisualFlow;
 public class LevelLoss : VisualAction
 {
     private AddressableSampleArray addressableSample;
+    private AudioManager audioManager;
     protected override async UniTask OnExecuting(CancellationToken cancellationToken)
     {
         if (HealthManager.health > 1)
         {
             HealthManager.health--;
-            addressableSample.OnPlayerLose();
+            PlayerPrefs.SetInt("CurrentHealth", PlayerPrefs.GetInt("CurrentHealth", 5) - 1);
+            PlayerPrefs.Save();
+            audioManager.PlaySFX(audioManager.death);
+            addressableSample.ReloadCurrentLevel();
         }
         else
         {
+            audioManager.PlaySFX(audioManager.death);
             GameManager.Instance.SetGameLose();
             addressableSample.UnLevels();
         }
@@ -22,6 +27,7 @@ public class LevelLoss : VisualAction
     }
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         LoadAddressableSampleArray();
     }
 

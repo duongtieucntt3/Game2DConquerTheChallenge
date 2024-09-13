@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {   
     public static int health = 5;
-    public Image[] hearts;
-    public Sprite fullHeart;
-    public Sprite emptyHeart;
+    [SerializeField] private Image[] hearts;
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite emptyHeart;
 
     private void Awake()
     {
-        health = 5;
+        health = PlayerPrefs.GetInt("CurrentHealth", 5);
     }
     private void Update()
     {
@@ -28,6 +28,8 @@ public class HealthManager : MonoBehaviour
     public void SetHealth(int count)
     {
         health = count;
+        PlayerPrefs.SetInt("CurrentHealth", count);
+        PlayerPrefs.Save();
     }
 
 }

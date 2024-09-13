@@ -33,7 +33,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 14.00005}
+  m_AnchoredPosition: {x: 0, y: 14}
   m_SizeDelta: {x: 274, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &818513341682610918
@@ -359,7 +359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35.99994}
+  m_AnchoredPosition: {x: 0, y: -36}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2744210742150465643
@@ -1215,6 +1215,7 @@ GameObject:
   - component: {fileID: 8569035127723404169}
   - component: {fileID: 4445248615197634957}
   - component: {fileID: 7728606119303018707}
+  - component: {fileID: 5402107466787248089}
   m_Layer: 0
   m_Name: BtnNextLv
   m_TagString: Untagged
@@ -1327,20 +1328,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AddressableSampleArray, Assembly-CSharp
-        m_MethodName: OnNextLevelButtonClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CollectingCoin, Assembly-CSharp
-        m_MethodName: DeductCoins
+        m_MethodName: NextLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1350,6 +1339,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5402107466787248089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350400925560184639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27832970ec431c438d9319e1717c7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5463402263617310424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1399,7 @@ GameObject:
   - component: {fileID: 5071081855931897443}
   - component: {fileID: 2427994336176516101}
   - component: {fileID: 5944791250098711768}
+  - component: {fileID: 6990221047918238226}
   m_Layer: 0
   m_Name: BtnWatch
   m_TagString: Untagged
@@ -1521,6 +1523,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6990221047918238226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5745093039860460655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27832970ec431c438d9319e1717c7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5883794591903209091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1579,7 @@ GameObject:
   - component: {fileID: 2941239826677912175}
   - component: {fileID: 5322569159323704894}
   - component: {fileID: 7102947524302947892}
+  - component: {fileID: 4061604425010868873}
   m_Layer: 0
   m_Name: BtnHint
   m_TagString: Untagged
@@ -1676,6 +1691,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4061604425010868873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899560075037244946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27832970ec431c438d9319e1717c7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6105987951450989367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -14.99995}
+  m_AnchoredPosition: {x: 0, y: -15}
   m_SizeDelta: {x: 234, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &6862316401425518932
@@ -2101,6 +2128,7 @@ GameObject:
   - component: {fileID: 1102127855505068160}
   - component: {fileID: 8659478774788803557}
   - component: {fileID: 329117354326943551}
+  - component: {fileID: 8794058591653945446}
   m_Layer: 0
   m_Name: BtnReplay
   m_TagString: Untagged
@@ -2212,20 +2240,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AddressableSampleArray, Assembly-CSharp
-        m_MethodName: OnPlayerLose
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CollectingCoin, Assembly-CSharp
-        m_MethodName: DeductCoins
+        m_MethodName: ReloadLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2235,6 +2251,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8794058591653945446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494596112718060443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27832970ec431c438d9319e1717c7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7670940921919622724
 GameObject:
   m_ObjectHideFlags: 0

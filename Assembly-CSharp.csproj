@@ -70,7 +70,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\_Levels\L_011\Scripts\MultiTapAreaHandler.cs" />
     <Compile Include="Assets\_Levels\L_009\Scripts\RandomPoints.cs" />
-    <Compile Include="Assets\_Scripts\UnlockNewLevel.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Mechanics\Drag\DragIn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -163,12 +162,13 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\IMultiFrameAction.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
-    <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\IControlFlow.cs" />
     <Compile Include="Assets\_Levels\L_009\Scripts\SetEnumPencils.cs" />
+    <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\IControlFlow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Mechanics\Drag\DragToWorld.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
+    <Compile Include="Assets\_Scripts\SetMusic.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Mechanics\Drag\DragOut.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
@@ -201,6 +201,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\LeanTween\Testing\FollowingTests.cs" />
     <Compile Include="Assets\_Levels\L_013\Scripts\SetActiveToggleGameObjectState.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />

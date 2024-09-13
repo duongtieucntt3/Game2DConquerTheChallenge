@@ -4,11 +4,13 @@ using NaughtyAttributes;
 using System;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.iOS.Xcode;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class CollectingCoin : MonoBehaviour
 {
+    [SerializeField] private AddressableSampleArray addressableSampleArray;
     [SerializeField] private GameObject coinPrefab;
     [SerializeField] private Transform coinParent;
     [SerializeField] private Transform spawnLocation;
@@ -23,10 +25,13 @@ public class CollectingCoin : MonoBehaviour
     List<GameObject> coins = new List<GameObject>();
     private Tween coinReactionTween;
     private int coin;
+    private AudioManager audioManager;
 
-    void Start()
+    private void Awake()
     {
-        // CollectCoins();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        int coinCount = PlayerPrefs.GetInt("CurrentCoin", 0);
+        SetCoin(coinCount);
     }
     [Button]
     public async void CollectCoins()
@@ -56,11 +61,24 @@ public class CollectingCoin : MonoBehaviour
     {
         coin = value;
         _coinText.text = coin.ToString();
+        PlayerPrefs.SetInt("CurrentCoin", coin);
+        PlayerPrefs.Save();
     }
-    public void DeductCoins(int value)
+    private void DeductCoins(int value)
+    {
+        SetCoin(coin - value);
+    }
+    public void ReloadLevel(int value)
     {
         if (coin < value) return;
-        SetCoin(coin - value);
+        this.DeductCoins(value);
+        addressableSampleArray.ReloadCurrentLevel();
+    }
+    public void NextLevel(int value)
+    {
+        if (coin < value) return;
+        this.DeductCoins(value);
+        addressableSampleArray.OnNextLevelButtonClicked();
     }
     private async UniTask MoveCoinsTask()
     {
@@ -80,6 +98,7 @@ public class CollectingCoin : MonoBehaviour
         Destroy(temp);
         await ReactToColectionCoin();
         SetCoin(coin + 1);
+        audioManager.PlaySFX(audioManager.coin);
     }
 
     private async UniTask ReactToColectionCoin()

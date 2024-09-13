@@ -19,12 +19,19 @@ public class CheckCollisionOnDragNew : MonoBehaviour
     private bool isCollided;
     public bool IsCollided { get => isCollided; set => isCollided = value; }
 
+    private AudioManager audioManager;
+
     private enum CollisionType
     {
         Enemy,
         Boom,
         Goal,
         None
+    }
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -59,13 +66,13 @@ public class CheckCollisionOnDragNew : MonoBehaviour
     protected virtual void HandleBoomCollision(Collider2D other)
     {
         this.isCollided = true;
-        Destroy(other.gameObject);
+        Destroy(other.gameObject);// Object Pooling
         ExecuteAction(this.notDestinationReached);
     }
     protected virtual void HandleGoalCollision(Collider2D other)
     {
-
-        Destroy(other.gameObject);
+        audioManager.PlaySFX(audioManager.Eat);
+        Destroy(other.gameObject);// Object Pooling 
         this.UpdateNumberObject(other);
         this.CheckNumber();
     }

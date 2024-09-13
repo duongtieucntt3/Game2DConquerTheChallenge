@@ -1,8 +1,5 @@
 using Cysharp.Threading.Tasks;
-using Lean.Touch;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -12,16 +9,23 @@ public class AddressableSampleArray : MonoBehaviour
     //public delegate void ClickAction();
     //public static event ClickAction OnClicked;
     [SerializeField] private AssetReference[] _levelPrefabs;
-    public int currentLevel = 0;
+    private int currentLevel = 1;
     private GameObject _currentLevelInstance;
     [SerializeField] private TextMeshProUGUI textLevel;
 
-    public async void OnPlayerLose()
+    private void Awake()
+    {
+        currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+    }
+    public void ReloadCurrentLevel()
     {
         UnLevels();
+        this.LoadCurrentLevel();
+    }
+    public async void LoadCurrentLevel()
+    {
         await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
         LoadLevel(currentLevel);
-
     }
     public async void UnLevels()
     {
@@ -37,6 +41,8 @@ public class AddressableSampleArray : MonoBehaviour
             UnLevels();
             await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
             UnLockNewLevel();
+            PlayerPrefs.SetInt("CurrentLevel", currentLevel);
+            PlayerPrefs.Save();
             LoadLevel(currentLevel);
         }
     }
@@ -45,10 +51,21 @@ public class AddressableSampleArray : MonoBehaviour
         if (currentLevel > 5)
         {
             this.LoadLevel(currentLevel - 4);
+
+            PlayerPrefs.SetInt("ReachedIndex", currentLevel - 4);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel") - 4);
+            PlayerPrefs.SetInt("CurrentLevel", currentLevel - 4);
+            PlayerPrefs.Save();
+
         }
         else
         {
             this.LoadLevel(1);
+            PlayerPrefs.SetInt("ReachedIndex", 1);
+            PlayerPrefs.SetInt("UnlockedLevel",1);
+            PlayerPrefs.SetInt("CurrentLevel", 1);
+            PlayerPrefs.Save();
+
         }
 
     }
@@ -78,7 +95,7 @@ public class AddressableSampleArray : MonoBehaviour
         }
     }
 
-    public async UniTask UnloadCurrentLevel()
+    private async UniTask UnloadCurrentLevel()
     {
         if (_currentLevelInstance == null) return;
         Destroy(_currentLevelInstance);
@@ -89,16 +106,14 @@ public class AddressableSampleArray : MonoBehaviour
     }
     private void UnLockNewLevel()
     {
-        int reachedIndex = PlayerPrefs.GetInt("ReachedIndex", 0);
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
-
-        if (currentLevel >= reachedIndex)
+        if (currentLevel >= PlayerPrefs.GetInt("ReachedIndex"))
         {
             PlayerPrefs.SetInt("ReachedIndex", currentLevel + 1);
-            PlayerPrefs.SetInt("UnlockedLevel", unlockedLevel + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) +1);
             PlayerPrefs.Save();
         }
     }
+
 }
 
 public static class AddressableUniTaskExtensions

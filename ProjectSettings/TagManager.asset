@@ -8,6 +8,7 @@ TagManager:
   - Boom
   - Goal
   - Enemy
+  - Audio
   layers:
   - Default
   - TransparentFX
