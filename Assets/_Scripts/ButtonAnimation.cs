@@ -13,8 +13,6 @@ public class ButtonAnimation : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         btn.onClick.AddListener(Anim);
 
-
-
     }
     private void Anim()
     {

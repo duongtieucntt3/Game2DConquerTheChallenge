@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using System;
+using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -12,7 +13,6 @@ public class AddressableSampleArray : MonoBehaviour
     private int currentLevel = 1;
     private GameObject _currentLevelInstance;
     [SerializeField] private TextMeshProUGUI textLevel;
-
     private void Awake()
     {
         currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
@@ -26,6 +26,11 @@ public class AddressableSampleArray : MonoBehaviour
     {
         await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
         LoadLevel(currentLevel);
+    }
+    public void ButtonPlayLoadLevel()
+    {
+        currentLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        LoadCurrentLevel();
     }
     public async void UnLevels()
     {
