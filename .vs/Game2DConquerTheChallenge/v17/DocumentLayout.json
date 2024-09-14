@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "E:\\Game2DConquerTheChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|e:\\game2dconquerthechallenge\\assets\\_scripts\\buttonanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|e:\\game2dconquerthechallenge\\assets\\_scripts\\gamemanager\\setmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\gamemanager\\setmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|e:\\game2dconquerthechallenge\\assets\\_scripts\\buttonhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\buttonhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\unlockedlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\unlockedlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\visualflow\\mechanics\\tap\\taparea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\visualflow\\mechanics\\tap\\taparea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\visualflow\\mechanics\\tap\\tapscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\visualflow\\mechanics\\tap\\tapscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\gamemanager\\levelloss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\gamemanager\\levelloss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\buttonanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\buttonanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\rotategameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\rotategameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\collectingcoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\collectingcoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\visualflow\\controlflow\\waitms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\visualflow\\controlflow\\waitms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|E:\\Game2DConquerTheChallenge\\assets\\_scripts\\addressablesamplearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\addressablesamplearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +55,124 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SetMusic.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\GameManager\\SetMusic.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\GameManager\\SetMusic.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\GameManager\\SetMusic.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\GameManager\\SetMusic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:13:29.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnlockedLevel.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\UnlockedLevel.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\UnlockedLevel.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\UnlockedLevel.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\UnlockedLevel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:41:51.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WaitMs.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\ControlFlow\\WaitMs.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\VisualFlow\\ControlFlow\\WaitMs.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\ControlFlow\\WaitMs.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\VisualFlow\\ControlFlow\\WaitMs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:02:10.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CollectingCoin.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\CollectingCoin.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\CollectingCoin.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\CollectingCoin.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\CollectingCoin.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwGQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:55:10.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ButtonAnimation.cs",
               "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\ButtonAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\ButtonAnimation.cs",
               "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\ButtonAnimation.cs",
               "RelativeToolTip": "Assets\\_Scripts\\ButtonAnimation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T00:54:45.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T14:53:21.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LevelLoss.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\GameManager\\LevelLoss.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\GameManager\\LevelLoss.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\GameManager\\LevelLoss.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\GameManager\\LevelLoss.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:51:32.046Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RotateGameObject.cs",
-              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\RotateGameObject.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\RotateGameObject.cs",
-              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\RotateGameObject.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\RotateGameObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Title": "ButtonHome.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\ButtonHome.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ButtonHome.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\ButtonHome.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ButtonHome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T00:47:21.811Z"
+              "WhenOpened": "2024-09-14T14:50:26.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TapScreen.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapScreen.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapScreen.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapScreen.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:45:40.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TapArea.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapArea.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapArea.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapArea.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\VisualFlow\\Mechanics\\Tap\\TapArea.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwD0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:45:07.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddressableSampleArray.cs",
+              "DocumentMoniker": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\AddressableSampleArray.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\AddressableSampleArray.cs",
+              "ToolTip": "E:\\Game2DConquerTheChallenge\\Assets\\_Scripts\\AddressableSampleArray.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\AddressableSampleArray.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T09:35:33.402Z"
             }
           ]
         }

@@ -6,7 +6,7 @@ using VisualFlow;
 public class LevelLoss : VisualAction
 {
     private AddressableSampleArray addressableSample;
-    private AudioManager audioManager;
+    [SerializeField] private AudioManager audioManager;
     protected override async UniTask OnExecuting(CancellationToken cancellationToken)
     {
         if (HealthManager.health > 1)

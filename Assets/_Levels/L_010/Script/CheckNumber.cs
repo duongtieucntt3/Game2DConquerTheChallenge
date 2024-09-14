@@ -29,6 +29,7 @@ public class CheckNumber : VisualAction
                 await notConditionCompleted.Execute(cancellationToken);
             }
         }
+        await UniTask.CompletedTask;
     }
 }
 

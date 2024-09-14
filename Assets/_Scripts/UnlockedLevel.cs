@@ -7,6 +7,10 @@ public class UnlockedLevel : MonoBehaviour
 {
     [SerializeField] private Button[] buttons;
     private void Awake()
+    {       
+        this.Unlock();
+    }
+    public void Unlock()
     {
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
         for (int i = 0; i < buttons.Length; i++)
@@ -18,5 +22,6 @@ public class UnlockedLevel : MonoBehaviour
             buttons[i].interactable = true;
         }
     }
-
 }
+
+

@@ -14,7 +14,7 @@ public class LevelWin : VisualAction
         addressableSample.UnLevels();
         await UniTask.CompletedTask;
     }
-    private void Awake()
+    private void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         LoadAddressableSampleArray();
