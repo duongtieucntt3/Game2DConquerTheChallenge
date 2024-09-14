@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 15
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notDestinationReached: {fileID: 7405445636796168731}
   destinationReached: {fileID: 3001287865190007779}
-  numberObject: 15
+  numberObject: 10
   numberTxt: {fileID: 2075758307217869190}
 --- !u!1 &1706628272501963799
 GameObject:
