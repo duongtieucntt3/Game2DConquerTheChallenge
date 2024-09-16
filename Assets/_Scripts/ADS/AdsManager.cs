@@ -1,5 +1,7 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class AdsManager : MonoBehaviour
@@ -21,9 +23,14 @@ public class AdsManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+        this.LoadAd();
+
+    }
+    private async void LoadAd()
+    {
+        await UniTask.Delay(TimeSpan.FromSeconds(1f));
         bannerAds.LoadBannerAd();
         interstitialAds.LoadInterstitalAd();
         rewardedAds.LoadRewardedAd();
-
     }
 }
