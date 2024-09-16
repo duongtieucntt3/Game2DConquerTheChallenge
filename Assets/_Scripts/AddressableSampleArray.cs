@@ -44,6 +44,10 @@ public class AddressableSampleArray : MonoBehaviour
         if (currentLevel < _levelPrefabs.Length)
         {
             currentLevel++;
+            if(currentLevel % 3 == 0)
+            {
+                AdsManager.Instance.interstitialAds.ShowInterstitialAd();
+            }
             UnLevels();
             await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
             UnLockNewLevel();

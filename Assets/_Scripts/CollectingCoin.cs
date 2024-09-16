@@ -26,11 +26,16 @@ public class CollectingCoin : MonoBehaviour
     private int coin;
     private AudioManager audioManager;
 
+    private static CollectingCoin instance;
+    public static CollectingCoin Instance => instance;
+
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         int coinCount = PlayerPrefs.GetInt("CurrentCoin", 0);
         SetCoin(coinCount);
+        if (instance != null) return;
+        instance = this;
     }
     [Button]
     public async void CollectCoins()
