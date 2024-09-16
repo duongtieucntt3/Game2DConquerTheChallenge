@@ -82,7 +82,6 @@
     <Compile Include="Assets\LeanTween\Testing\TestingIssue2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing248.cs" />
-    <Compile Include="Assets\_Scripts\ADS\RewardedAds.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Mechanics\TargetArea\BoxArea.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\_Shared\CreateVisualActionHelper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -116,7 +115,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\_Scripts\Hearth\HealthManager.cs" />
-    <Compile Include="Assets\_Scripts\ADS\InitializeAds.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
     <Compile Include="Assets\_Levels\L_012\Scripts\MoveByPoints.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\SpriteHeader.cs" />
@@ -130,7 +128,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\_Scripts\ADS\BannerAds.cs" />
     <Compile Include="Assets\_Levels\L_010\Script\UpdateNumberOrder.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\_Scripts\GameManager\AudioManager.cs" />
@@ -186,7 +183,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
-    <Compile Include="Assets\_Scripts\ADS\AdsManager.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\_Scripts\GameManager\LevelLoss.cs" />
     <Compile Include="Assets\_Levels\L_011\Scripts\TapAreaStatusChecker.cs" />
@@ -198,7 +194,6 @@
     <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\CompleteAction.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Orientation.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\Wait.cs" />
-    <Compile Include="Assets\_Scripts\ADS\ShowBannerAds.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\ControlFlow\Sequence.cs" />
@@ -208,7 +203,6 @@
     <Compile Include="Assets\LeanTween\Testing\TestingIssue.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\SwipeController.cs" />
     <Compile Include="Assets\_Scripts\VisualFlow\Mechanics\Tap\TapScreen.cs" />
-    <Compile Include="Assets\_Scripts\ADS\InterstitialAds.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\LeanTween\Testing\FollowingTests.cs" />
     <Compile Include="Assets\_Levels\L_013\Scripts\SetActiveToggleGameObjectState.cs" />
