@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2065CF69-05B0-1215-55FC-B5D18EF3C94F}</ProjectGuid>
+    <ProjectGuid>{C6DBE9B5-163E-2BBF-CEFD-AE78E95E9B5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -1222,23 +1222,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{42B55896-8258-C9CA-EA7A-D0902BE8DA9B}</Project>
+      <Project>{C1D01590-1959-CDF3-FEC0-D3BE43AE2BE2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{BE7E7634-16F7-3C3D-8C1F-C4DCF5489040}</Project>
+      <Project>{D13CAA5A-5CD9-2DDB-68E7-336B6EFE8A0C}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="LeanTouch.csproj">
-      <Project>{D32476E1-2CBD-37C6-9A70-D86954761E0E}</Project>
+      <Project>{231F1A48-3B96-FC56-1725-B8F628D98332}</Project>
       <Name>LeanTouch</Name>
     </ProjectReference>
     <ProjectReference Include="LeanCommon.csproj">
-      <Project>{F7AC2007-22DE-DD24-D82E-8E189F7D817E}</Project>
+      <Project>{0126C046-EC66-4D21-596D-85EE8B6DF39D}</Project>
       <Name>LeanCommon</Name>
     </ProjectReference>
     <ProjectReference Include="CW.Common.csproj">
-      <Project>{65F64D1A-3C77-809B-C520-17E4E0DFCBCF}</Project>
+      <Project>{4B66437D-C33F-A8DE-3744-E619E2B5AE93}</Project>
       <Name>CW.Common</Name>
     </ProjectReference>
   </ItemGroup>
